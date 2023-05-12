@@ -1,3 +1,5 @@
+// Modal to get the Movie details from database
+
 const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
@@ -11,6 +13,8 @@ const movieInfoSchema = new Schema({
   release_date: { type: Date },
   running_time: { type: String },
   trailer: { type: String },
+  ticketsAvailable: { type: Number },
+
 });
 
 const MovieInfo = mongoose.model("MovieInfo", movieInfoSchema);

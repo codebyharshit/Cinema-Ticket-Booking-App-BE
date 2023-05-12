@@ -11,6 +11,7 @@ module.exports = async (req, res) => {
       releaseDate,
       runningTime,
       trailer,
+      ticketsAvailable,
     } = req.body;
 
     const newMovie = new Movie({
@@ -22,6 +23,7 @@ module.exports = async (req, res) => {
       releaseDate,
       runningTime,
       trailer,
+      ticketsAvailable,
     });
 
     // Save the new movie to the database

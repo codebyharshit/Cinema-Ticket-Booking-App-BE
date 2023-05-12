@@ -1,3 +1,5 @@
+// Model to add the movies to the database
+
 const mongoose = require("mongoose");
 
 const movieSchema = new mongoose.Schema({
@@ -33,6 +35,11 @@ const movieSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  ticketsAvailable: {
+    type: Number,
+    required: true,
+  },
+
 });
 
 const Movie = mongoose.model("Movie", movieSchema);

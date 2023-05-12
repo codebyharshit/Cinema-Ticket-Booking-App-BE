@@ -1,8 +1,4 @@
-// const express = require("express");
-// const getMoviesInfo  = require ("../controllers/getMoviesInfo.js");
-// const movieInfo_route = express.Router();
-// movieInfo_route.route("/getInfo").get(getMoviesInfo);
-// module.exports = movieInfo_route;
+// Route to handle the post request to add a movie in database
 
 const express = require("express");
 const addNewMovie = require("../controllers/addNewMovie.js");

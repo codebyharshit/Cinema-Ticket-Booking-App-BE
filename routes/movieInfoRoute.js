@@ -1,3 +1,5 @@
+// Route to fetch all movies details on frontend
+
 const express = require("express");
 const getMoviesInfo  = require ("../controllers/getMoviesInfo.js");
 const movieInfo_route = express.Router();
