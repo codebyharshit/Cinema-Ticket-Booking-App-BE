@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Follow the Instructions to Run the Nodejs Backend code
 
 Clone the Repo in your Desktop/Laptop
 
@@ -10,6 +10,6 @@ Open it in VS Code and install dependencies
 
 Run the app in your browser
 
-### `npm start`
+### `nodemon run dev`
 
-After installing the dependencies, run the app in the browser. 
+After installing the dependencies, run the backend code in your server. 
