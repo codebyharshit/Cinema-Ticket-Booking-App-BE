@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const movieInfo_route = require("./routes/movieInfoRoute.js");
 const addMovie_route = require("./routes/addMovieRoute.js");
 const bookTickets_route = require("./routes/bookTickets.js");
+const fetchMovie_route = require("./routes/fetchMovieRoute.js");
 const downloadTickets_route = require("./routes/downloadTickets.js");
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(cors());
 app.options("*", cors());
 app.use("/", movieInfo_route);
 app.use("/", addMovie_route);
+app.use("/", fetchMovie_route);
 app.use("/", bookTickets_route);
 app.use("/", downloadTickets_route);
 
